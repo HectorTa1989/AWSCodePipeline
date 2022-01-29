@@ -12,7 +12,7 @@ The application will need to be hosted in S3. If you go to S3 in the AWS console
 Go to the properties tab of the bucket and click on the static webhosting box and select “use this bucket to host a website”.
 Now go to the permissions tab and click on bucket policy, you will need to change the policy of the bucket to make the S3 bucket public. Use this code below:
 
-[{
+{
   "Version": "2012-10-17",
   "Statement": [
     {
@@ -25,7 +25,7 @@ Now go to the permissions tab and click on bucket policy, you will need to chang
       "Resource": "arn:aws:s3:::YOUR-BUCKET-NAME/*"
     }
   ]
-}](url)
+}
 
 Step 2: Create AWS CodePipeline
 Go to CodePipeline in the AWS console and clicke on “Create a pipeline”
